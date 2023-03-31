@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FriendWishController">
+   <children>
+      <ImageView fitHeight="622.0" fitWidth="991.0" layoutX="-4.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Solid-color-hd-wallpapers-download.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="friendTable" layoutX="42.0" layoutY="181.0" prefHeight="292.0" prefWidth="853.0">
+        <columns>
+          <TableColumn fx:id="itemCol" prefWidth="206.0" text="Item Name" />
+          <TableColumn fx:id="priceCol" prefWidth="152.0" text="Price" />
+            <TableColumn fx:id="desCol" minWidth="0.0" prefWidth="282.0" text="Description" />
+            <TableColumn fx:id="contCol" prefWidth="212.0" text="Contribution" />
+        </columns>
+      </TableView>
+      <Text fill="#610e0e" layoutX="123.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Know your Friend WishList..!!">
+         <font>
+            <Font name="Freestyle Script" size="84.0" />
+         </font>
+      </Text>
+      <Button fx:id="HomeFriendWish" layoutX="274.0" layoutY="525.0" mnemonicParsing="false" onAction="#HomeFriendWish" prefHeight="31.0" prefWidth="367.0" text="Back To HomePage" />
+      <Text layoutX="42.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your friend name" />
+      <Button fx:id="friendBtn" layoutX="249.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleFriendWish" text="okay" />
+      <TextField fx:id="friendnameField" layoutX="42.0" layoutY="131.0" />
+      <Label fx:id="messageLabel" layoutX="42.0" layoutY="480.0" prefHeight="27.0" prefWidth="701.0" textFill="#f50000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contField" layoutX="725.0" layoutY="131.0" prefHeight="31.0" prefWidth="67.0" />
+      <Button fx:id="contBtn" layoutX="815.0" layoutY="129.0" mnemonicParsing="false" onAction="#handlContButton" prefHeight="31.0" prefWidth="65.0" text="Send" />
+      <Button fx:id="refreshBtn" layoutX="825.0" layoutY="478.0" mnemonicParsing="false" onAction="#Refresh" text="Refresh" />
+      <Label fx:id="Label2" layoutX="61.0" layoutY="497.0" prefHeight="21.0" prefWidth="442.0" />
+   </children>
+</AnchorPane>

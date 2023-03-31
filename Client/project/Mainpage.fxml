@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MainpageController">
+   <children>
+      <ImageView fitHeight="695.0" fitWidth="695.0" layoutX="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/5fd8dfde-45b4-4693-97e0-5393c522faaa.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFriends" cache="true" cacheHint="SCALE" layoutX="28.0" layoutY="365.0" mnemonicParsing="false" onAction="#gotoFriends" prefHeight="31.0" prefWidth="183.0" text="Friends">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnRequests" layoutX="28.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnRequests" prefHeight="31.0" prefWidth="183.0" text=" Friend Requests">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnWish" layoutX="28.0" layoutY="262.0" mnemonicParsing="false" onAction="#gotoWishlist" prefHeight="31.0" prefWidth="183.0" text="My wishes" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+        <Button fx:id="btnLogout" layoutX="29.0" layoutY="573.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="183.0" text="Log Out">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btnitems" layoutX="28.0" layoutY="311.0" mnemonicParsing="false" onAction="#gotoItems" prefHeight="31.0" prefWidth="183.0" text="Wish Items" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Text fill="#613e3e" layoutX="365.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make your Wish" wrappingWidth="384.236328125">
+         <font>
+            <Font name="Freestyle Script" size="87.0" />
+         </font>
+      </Text>
+      <Text fill="#613e3e" layoutX="538.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and let your soul bliss " wrappingWidth="367.58984375">
+         <font>
+            <Font name="Freestyle Script" size="45.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnFriendwish" layoutX="28.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnFriendwish" prefHeight="31.0" prefWidth="183.0" text="Friends Wishlist">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Text layoutX="58.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#613e3e" layoutX="31.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ready?">
+         <font>
+            <Font name="Freestyle Script" size="86.0" />
+         </font>
+      </Text>
+      <Text fill="#613e3e" layoutX="61.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="go to....">
+         <font>
+            <Font name="Freestyle Script" size="57.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBalance" layoutX="29.0" layoutY="514.0" mnemonicParsing="false" onAction="#ChargeBalance" prefHeight="45.0" prefWidth="183.0" text="Charge your balance">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+    
+   </children>
+</AnchorPane>

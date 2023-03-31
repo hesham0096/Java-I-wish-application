@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MyWishListController">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="967.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Solid-color-hd-wallpapers-download.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="wishList_table" layoutX="59.0" layoutY="73.0" prefHeight="423.0" prefWidth="861.0">
+        <columns>
+          <TableColumn fx:id="cName" prefWidth="133.0" text="Item Name" />
+          <TableColumn fx:id="cPrice" prefWidth="132.0" text="Price" />
+            <TableColumn fx:id="cDesc" prefWidth="236.0" text="Description" />
+            <TableColumn fx:id="cImage" minWidth="0.0" prefWidth="194.0" text="Image" />
+            <TableColumn fx:id="conCol" prefWidth="165.0" text="Contribution" />
+        </columns>
+      </TableView>
+      <Text layoutX="702.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="btnHomeWish" layoutX="28.0" layoutY="550.0" mnemonicParsing="false" onAction="#Homewish" prefHeight="31.0" prefWidth="212.0" text="Back to Homepage" />
+      <Button fx:id="btnDelete" layoutX="658.0" layoutY="496.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="262.0" text=" Drop Wish" />
+      <TextField fx:id="balanceField" editable="false" layoutX="297.0" layoutY="550.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.FriendListController">
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="738.0" layoutX="-7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/istockphoto-1263567072-612x612.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="friendListTable" layoutX="753.0" layoutY="120.0" prefHeight="307.0" prefWidth="329.0">
+        <columns>
+          <TableColumn fx:id="friendNameCol" prefWidth="123.0" text="Friend Name" />
+          <TableColumn fx:id="friendEmail" prefWidth="224.0" text="E-MAIL" />
+        </columns>
+      </TableView>
+      <Button fx:id="addbutton" layoutX="939.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="31.0" prefWidth="150.0" text="Add New Friend" />
+      <Button fx:id="removebutton" layoutX="932.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleRemoveButton" prefHeight="31.0" prefWidth="150.0" text="Remove Friend" />
+      <Button fx:id="btnHomeF" layoutX="810.0" layoutY="605.0" mnemonicParsing="false" onAction="#HomeF" prefHeight="31.0" prefWidth="260.0" text="Back to Homepage" />
+      <Text fill="#a81313" layoutX="753.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Share your Wishlist with.." wrappingWidth="374.869140625">
+         <font>
+            <Font name="Freestyle Script" size="52.0" />
+         </font></Text>
+      <Text layoutX="745.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invite new friends to share with you your wishlist !!">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#c90b0b" layoutX="770.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Freestyle Script" size="54.0" />
+         </font>
+      </Text>
+      <TextField fx:id="friendNameField" layoutX="766.0" layoutY="524.0" prefWidth="173.0" />
+      <Label fx:id="messageLabel" layoutX="766.0" layoutY="568.0" prefHeight="21.0" prefWidth="356.0" textAlignment="CENTER" textFill="#eb0a0a" />
+   </children>
+</AnchorPane>
